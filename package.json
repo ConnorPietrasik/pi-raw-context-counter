@@ -1,0 +1,36 @@
+{
+	"name": "@cpzombie/pi-raw-context-counter",
+	"version": "1.0.0",
+	"description": "pi coding agent extension: TUI footer whose context counter shows raw token counts (e.g. 25k/200k) instead of a percentage",
+	"keywords": [
+		"pi-package",
+		"pi-extension"
+	],
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ConnorPietrasik/pi-raw-context-counter"
+	},
+	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"extensions",
+		"README.md"
+	],
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions"
+		],
+		"image": "https://raw.githubusercontent.com/ConnorPietrasik/pi-raw-context-counter/master/Thumbnail.png"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}
